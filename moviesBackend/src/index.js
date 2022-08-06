@@ -7,9 +7,12 @@ const app = express();
 const cors = require("cors")
 //const bodyParser = require('body-parser');
 
-
+if (process.env.NODE_ENV !== 'production'){
+    require('dotenv').config();
+}
+console.log(process.env.PORT)
 // App Server
-app.set("port",process.env.DB_PORT || 3001);
+app.set("port",process.env.PORT || 3001);
 app.listen(app.get("port"),() => console.log("Server Start http://localhost:" + app.get("port")));
 
 // App Access Public
