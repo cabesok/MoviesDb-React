@@ -9,7 +9,7 @@ const cors = require("cors")
 
 
 // App Server
-app.set("port",process.env.PORT || 3001);
+app.set("port",process.env.DB_PORT || 3001);
 app.listen(app.get("port"),() => console.log("Server Start http://localhost:" + app.get("port")));
 
 // App Access Public
