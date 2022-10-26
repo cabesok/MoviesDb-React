@@ -43,7 +43,7 @@ list2: async function(req, res) {
                     title: movie.title,
                     rating: movie.rating,
                     length: movie.length,
-                    img: `http://localhost:3001/images/${movie.img}`,
+                    img: `/images/${movie.img}`,
                     genre: movie.genre,
                     actors: movie.actors
             }
