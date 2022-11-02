@@ -43,8 +43,7 @@ list2: async function(req, res) {
                     title: movie.title,
                     rating: movie.rating,
                     length: movie.length,
-                    /* img: `/images/${movie.img}`, */
-                    img: movie.img,
+                    img: `/images/${movie.img}`,
                     genre: movie.genre,
                     actors: movie.actors
             }
